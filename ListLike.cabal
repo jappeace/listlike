@@ -1,5 +1,5 @@
 Name: ListLike
-Version: 4.6.1
+Version: 4.6.2
 License: BSD3
 Maintainer: David Fox <dsf@seereason.com>
 Author: John Goerzen
@@ -59,9 +59,7 @@ Library
                 ,fmlist     >= 0.8   && < 0.10
                 ,utf8-string
                 ,deepseq
-
-  If !impl(ghc >= 8.4)
-    Build-Depends: semigroups >= 0.16 && < 0.20
+		,semigroups >= 0.16 && < 0.20
 
 Test-suite listlike-tests
   GHC-Options: -O2
@@ -83,8 +81,7 @@ Test-suite listlike-tests
                   ,text
                   ,vector
                   ,utf8-string
-  If !impl(ghc >= 8.4)
-    Build-Depends: semigroups >= 0.16 && < 0.20
+		  ,semigroups >= 0.16 && < 0.20
 
 source-repository head
   type:     git
